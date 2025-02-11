@@ -1,0 +1,25 @@
+﻿@page "/projects"
+@inject HttpClient Http
+
+<h3>Список проектов</h3>
+
+@if(projects == null)
+{
+	<p>Загрузка...</p>
+}
+else{
+	<ul>
+		@foreach(var item in projects){
+			<li>@item</li>
+		}
+	</ul>
+}
+
+@code {
+	private List<string> projects;
+
+	protected override async Task OnInitializedAsync()
+	{
+		projects = await Http.GetFromJsonAsync<List<string>>("project");
+	}
+}

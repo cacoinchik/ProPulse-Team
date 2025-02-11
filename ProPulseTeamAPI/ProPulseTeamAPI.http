@@ -1,0 +1,6 @@
+@ProPulseTeamAPI_HostAddress = http://localhost:5183
+
+GET {{ProPulseTeamAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
