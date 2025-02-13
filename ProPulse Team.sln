@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPulseTeamAPI", "ProPulseTeamAPI\ProPulseTeamAPI.csproj", "{EC340761-2A20-44CF-BFD8-2C0BC0C141DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{445ACF37-E56D-44F8-85F0-BEC7CA9429B3} = {445ACF37-E56D-44F8-85F0-BEC7CA9429B3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPulseTeamClient", "ProPulseTeamClient\ProPulseTeamClient.csproj", "{C67AEEF2-D2E7-4CDA-BF3A-236B9F756682}"
+	ProjectSection(ProjectDependencies) = postProject
+		{445ACF37-E56D-44F8-85F0-BEC7CA9429B3} = {445ACF37-E56D-44F8-85F0-BEC7CA9429B3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProPulseTeamShared", "ProPulseTeamShared\ProPulseTeamShared.csproj", "{445ACF37-E56D-44F8-85F0-BEC7CA9429B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +29,15 @@ Global
 		{C67AEEF2-D2E7-4CDA-BF3A-236B9F756682}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67AEEF2-D2E7-4CDA-BF3A-236B9F756682}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C67AEEF2-D2E7-4CDA-BF3A-236B9F756682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{445ACF37-E56D-44F8-85F0-BEC7CA9429B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445ACF37-E56D-44F8-85F0-BEC7CA9429B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445ACF37-E56D-44F8-85F0-BEC7CA9429B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445ACF37-E56D-44F8-85F0-BEC7CA9429B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {592A632B-6922-401F-A622-2DB1486AECB7}
 	EndGlobalSection
 EndGlobal
